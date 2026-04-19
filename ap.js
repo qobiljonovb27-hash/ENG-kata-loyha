@@ -38,3 +38,17 @@ let username = promt("Ismingizni Kiriting");
 if (username.includes("A")) {
   console.log(Sizni);
 }
+
+
+
+// script.js
+
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Xabaringiz yuborildi!");
+});
+
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Ro‘yxatdan o‘tish muvaffaqiyatli!");
+});

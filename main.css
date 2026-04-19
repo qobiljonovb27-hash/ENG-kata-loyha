@@ -255,6 +255,82 @@ footer {
 
 
 
+body {
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.about {
+  background: #1a1a1a;
+}
+
+.contact {
+  background: #222;
+}
+
+.register {
+  background: #1a1a1a;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #00ffd5;
+}
+
+p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.7;
+}
+
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffd5;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: white;
+}
+
+footer {
+  background: black;
+  padding: 25px;
+  font-size: 14px;
+}
+
+
 @media (max-width: 768px) {
 
 
