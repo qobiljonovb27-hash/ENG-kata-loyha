@@ -329,6 +329,305 @@ footer {
   padding: 25px;
   font-size: 14px;
 }
+.contact {
+  background: #222;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.phone {
+  margin-bottom: 25px;
+  font-size: 18px;
+  color: #00ffd5;
+}
+
+form {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  outline: none;
+  background: white;
+  color: black;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+button {
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffd5;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+/* MODERN VA CHIROYLI DIZAYN */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+}
+
+/* MEN HAQIMDA */
+.about {
+  text-align: center;
+  background: linear-gradient(to right, #ffffff, #f8fbff);
+}
+
+.about h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #555;
+}
+
+/* CONTACT */
+.contact {
+  background: white;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.phone {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #dcdfe48a;
+  border-radius: 14px;
+  outline: none;
+  font-size: 16px;
+  background: #fafafa;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  background: rgba(255, 255, 255, 0.093);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* BUTTON */
+button {
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  background: #2563eb;
+  color: rgba(255, 255, 255, 0.211);
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SAYT UCHUN YAXSHIROQ MODERN RANG */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #eaf2ff;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* SECTION */
+section {
+  padding: 80px 20px;
+}
+
+/* MEN HAQIMDA */
+.about {
+  text-align: center;
+  background: #dbeafe;
+}
+
+.about h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 18px;
+  color: #374151;
+}
+
+/* CONTACT */
+.contact {
+  background: #ffffff;
+  text-align: center;
+  border-top: 1px solid #dbeafe;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.contact h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.phone {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #bfdbfe;
+  border-radius: 14px;
+  outline: none;
+  font-size: 16px;
+  background: #f8fbff;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* BUTTON */
+button {
+  padding: 16px;
+  border: none;
+  border-radius: 14px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 15px;
+}
 
 
 @media (max-width: 768px) {
