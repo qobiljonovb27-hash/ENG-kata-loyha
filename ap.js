@@ -41,32 +41,44 @@ if (username.includes("A")) {
 
 
 
-const botToken = "BOT_TOKEN";
-const chatId = "YOUR_CHAT_ID";
+// script.js
 
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
+  alert("Xabaringiz yuborildi!");
+});
 
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
-
-  let text = `📩 Yangi xabar:%0A
-👤 Ism: ${name}%0A
-📧 Email: ${email}%0A
-💬 Xabar: ${message}`;
-
-  fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`)
-    .then(response => {
-      alert("Xabar sizga yuborildi!");
-    })
-    .catch(error => {
-      alert("Xatolik yuz berdi!");
-    });
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  alert("Ro‘yxatdan o‘tish muvaffaqiyatli!");
 });
 
 
-document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+
+document.getElementById("btn").addEventListener("click", function () {
+  alert("Mening hayotim sahifasiga xush kelibsiz!");
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
   e.preventDefault();
-  alert("Xabaringiz muvaffaqiyatli yuborildi!");
+  alert("Xabaringiz yuborildi!");
+});
+
+
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let message = document.getElementById("message").value;
+
+  // Demo status
+  document.getElementById("status").innerText =
+    "Xabaringiz yuborildi! (demo)";
+
+  console.log("Ism:", name);
+  console.log("Xabar:", message);
+
+  // form reset
+  this.reset();
 });

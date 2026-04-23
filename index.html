@@ -1,192 +1,275 @@
-<!DOCTYPE html >
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilol Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b1120;
+      color: white;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #22c55e;
+    }
+
+    .menu {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .menu a:hover {
+      color: #22c55e;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: linear-gradient(45deg, #22c55e, #3b82f6);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cbd5e1;
+    }
+
+    .phone {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #22c55e;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .about-box {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 700px;
+      margin: auto;
+      display: grid;
+      gap: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 16px;
+      border: none;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.08);
+      color: white;
+      outline: none;
+    }
+
+    textarea {
+      height: 150px;
+      resize: none;
+    }
+
+    button {
+      padding: 16px;
+      border: none;
+      border-radius: 14px;
+      background: #22c55e;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #16a34a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .menu {
+        gap: 15px;
+        justify-content: center;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  
 
-  
-    <header class="navbar">
-        <div class="container">
-            <h2 class="logo">BILOL QIZIQISHLARIM</h2>
-            <nav>
-                <a href="#">IT Yonalish </a>
-                <a href="#">FUDBOL Oynash </a>
-                <a href="#">RASM Chizish </a>
-            </nav>
-        </div>
-    </header>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">Bilol Portfolio</div>
+      <div class="menu">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#about">Men haqimda</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#projects">Loyihalar</a>
+        <a href="#contact">Bog'lanish</a>
+      </div>
+    </nav>
+  </div>
+</header>
 
-   
-    <section class="hero">
-        <div class="container hero-content">
-            <div class="text">
-                <h1>Welcome to  My  Website</h1>
-                <p>Men Qobiljonov Bilol yoshim 14 da men IT <br> 
-                    sohasiga qiziqaman Men Mars It ga  Boraman
-                </p>
-                <button class="btn">Mening hayotim</button>
-            </div>
-            <div class="image">
-                <img src="https://via.placeholder.com/400" alt="">
-            </div>
-        </div>
-    </section>
+<section class="hero" id="home">
+  <div class="container">
+    <div class="avatar"></div>
+    <h1>Salom, men Bilol </h1>
+    <p>Frontend Developer | Zamonaviy Portfolio Saytlar Yaratuvchi Yosh Dastur Chi Man </p>
+    <div class="phone"> 93-058-41-79 Menga Murojat </div>
+  </div>
+</section>
 
-
-    <section class="cards">
-        <div class="container card-box">
-            <div class="card">
-                <h3>HTML</h3>
-                <p>Organyapman </p>
-            </div>
-            <div class="card">
-                <h3>CSS</h3>
-                <p>Organyapman</p>
-            </div>
-            <div class="card">
-                <h3>JavaScript</h3>
-                <p>Endi organaman</p>
-            </div>
-        </div>
-    </section>
-        
-<section class="about">
-    <div class="container about-box">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>Salom 👋 Men Bilol. Men Frontend dasturchi bo‘lishni o‘rganayapman.
-               HTML va CSS ni o‘rganmoqdaman va professional portfolio qilishni maqsad qilganman.</p>
-        </div>
+<section id="about">
+  <div class="container">
+    <h2 class="title">Men haqimda</h2>
+    <div class="about-box">
+      Men chiroyli, zamonaviy va professional web saytlar yarataman.
+      HTML, CSS va JavaScript yordamida tez ishlaydigan responsive portfolio va biznes saytlar qilaman.
     </div>
+  </div>
 </section>
 
-<section class="skills">
-    <div class="container">
-        <h2>My Skills</h2>
-
-        <div class="skill">
-            <p>HTML</p>
-            <div class="progress">
-                <div class="progress-bar html"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <p>CSS</p>
-            <div class="progress">
-                <div class="progress-bar css"></div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <p>Java Script</p>
-            <div class="progress">
-                <div class="progress-bar js"></div>
-            </div>
-        </div>
+<section id="services">
+  <div class="container">
+    <h2 class="title">Xizmatlar</h2>
+    <div class="card-grid">
+      <div class="card">Portfolio Website</div>
+      <div class="card">Business Landing Page</div>
+      <div class="card">Responsive Design</div>
+      <div class="card">Frontend Development</div>
+      <div class="card">Modern UI Design</div>
+      <div class="card">Website Deployment</div>
+         <div class="card">Grafic Dizayn</div>
+            <div class="card">Website Becgent</div>
     </div>
+  </div>
 </section>
 
-<section class="goals">
-    <div class="container">
-        <h2>My Goals</h2>
-        <ul>
-            <li>✔ Kuchli Frontend Developer bo‘lish</li>
-            <li>✔ Portfolio saytlar qilish</li>
-            <li>✔ IT kompaniyada ishlash</li>
-        </ul>
+<section id="projects">
+  <div class="container">
+    <h2 class="title">Loyihalar</h2>
+    <div class="card-grid">
+      <div class="card">Project 1 - Modern Portfolio</div>
+      <div class="card">Project 2 - Business Website</div>
+      <div class="card">Project 3 - Landing Page</div>
+      <div class="card">Project 4 - Admin Dashboard</div>
     </div>
+  </div>
 </section>
 
-<section class="future">
-    <div class="container">
-        <h2>My Future Plans</h2>
-        <p>
-            Kelajakda men kuchli Frontend Developer bo‘lib,
-            zamonaviy va professional web saytlar yaratmoqchiman.
-            React va boshqa zamonaviy texnologiyalarni o‘rganib,
-            katta IT kompaniyada ishlashni maqsad qilganman.
-        </p>
-
-        <div class="future-box">
-            <div class="future-card">
-                <h3>2026</h3>
-                <p>HTML, CSS, JavaScript mukammal o‘rganish</p>
-            </div>
-
-            <div class="future-card">
-                <h3>2027</h3>
-                <p>React va kuchli portfolio yaratish</p>
-            </div>
-
-            <div class="future-card">
-                <h3>2028</h3>
-                <p>IT kompaniyada Junior Developer bo‘lish</p>
-            </div>
-        </div>
-    </div>
+<section id="contact">
+  <div class="container">
+    <h2 class="title">Bog'lanish ✉️</h2>
+    <form>
+      <input type="text" placeholder="Ismingiz" />
+      <input type="email" placeholder="Email" />
+      <textarea placeholder="Xabaringiz..."></textarea>
+      <button type="submit">Yuborish</button>
+    </form>
+  </div>
 </section>
 
-   
-    <footer>
-        <p>© 2026 Bilol. All rights reserved.</p>
-    </footer>
-    
-<section class="vision">
-    <div class="overlay">
-        <div class="container vision-content">
-            <h2>My Big Vision 🚀</h2>
-            <p>
-                Men kelajakda nafaqat Frontend Developer,
-                balki kreativ va tezkor fikrlaydigan dasturchi bo‘lishni istayman.
-                Futboldagi intizom va mehnatni IT sohasiga olib kiraman.
-            </p>
 
-            <div class="vision-stats">
-                <div class="stat">
-                    <h3>1+</h3>
-                    <span>Yillik O‘rganish</span>
-                </div>
-                <div class="stat">
-                    <h3>10+</h3>
-                    <span>Portfolio Loyihalar</span>
-                </div>
-                <div class="stat">
-                    <h3>∞</h3>
-                    <span>Katta Maqsadlar</span>
-                </div>
-            </div>
-
-            <button class="vision-btn">Follow My Journey</button>
-        </div>
-    </div>
-</section>
-
- 
-  <!-- Men bilan bog‘lanish -->
-<section class="contact">
-  <h2>Men bilan bog‘lanish</h2>
-
-  <p class="phone">
-    📞 Telefon raqamim: <strong>+998 93 058 41 79 (Bilol.Qobiljonov)</strong>
-  </p>
-
-  <form id="contactForm">
-    <input type="text" id="name" placeholder="Ismingiz" required>
-
-    <input type="email" id="email" placeholder="Emailingiz" required>
-
-    <textarea id="message" placeholder="Xabaringizni yozing..." required></textarea>
-
-    <button type="submit">Yuborish</button>
-  </form>
-</section>
-
+<footer>
+  © 2026 Bilol Portfolio | Professional Website
+</footer>
 
 </body>
 </html>
